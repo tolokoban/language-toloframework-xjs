@@ -4,16 +4,20 @@ type: 'tree-sitter'
 parser: 'tree-sitter-toloframework-xjs'
 fileTypes: ['xjs', 'dep']
 scopes:
-  'key': 'support.variable'
+  'key': 'keyword.operator'
   'comment': 'comment'
   'xjs > object > special:nth-child(0)': 'entity.name.tag'
-  'special, xjs > object > special:nth-child(1)': 'entity.name.function'
+  'special': 'entity.name.function'
   'number': 'constant.numeric'
-  'string': 'string.quoted'
+  'string': 'string'
   'true': 'constant.language'
   'false': 'constant.language'
   'null': 'constant.language'
   'undefined': 'constant.language'
+  '"{"': 'punctuation.definition.bold'
+  '"}"': 'punctuation.definition.bold'
+  '"["': 'punctuation.definition.bold'
+  '"]"': 'punctuation.definition.bold'
 folds: [
   {
     type: 'comment'
