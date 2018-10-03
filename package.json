@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/tolokoban/language-toloframework-xjs.git"
   },
-  "license": "GPL",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/tolokoban/language--toloframework-xjs/issues"
   },

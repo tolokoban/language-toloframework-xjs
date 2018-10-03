@@ -13,15 +13,18 @@ scopes:
   'false': 'keyword'
   'null': 'keyword'
   'undefined': 'keyword'
-folds:
-  { type: 'comment' }
+folds: [
+  {
+    type: 'comment'
+  },
   {
     start: {type: '"["', index: 0},
     end: {type: '"]"', index: -1}
-  }  
+  },
   {
     start: {type: '"{"', index: 1},
     end: {type: '"}"', index: -1}
-  }  
+  }
+]
 comments:
   start: '// '
