@@ -5,8 +5,8 @@ parser: 'tree-sitter-toloframework-xjs'
 fileTypes: ['xjs', 'dep']
 scopes:
   'comment': 'comment'
-  'xjs > object > special:nth-child(1)': 'constructor'
-  'special, xjs > object > special:first-child:nth-child(2)': 'function'
+  'xjs > object > special:nth-child(0)': 'constructor'
+  'special, xjs > object > special:nth-child(1)': 'function'
   'number': 'number'
   'string': 'string'
   'true': 'keyword'
