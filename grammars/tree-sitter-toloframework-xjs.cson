@@ -4,10 +4,11 @@ type: 'tree-sitter'
 parser: 'tree-sitter-toloframework-xjs'
 fileTypes: ['xjs', 'dep']
 scopes:
+  'key': 'support.variable'
   'comment': 'comment'
-  'xjs > object > special:nth-child(0)': 'constructor'
-  'special, xjs > object > special:nth-child(1)': 'function'
-  'number': 'number'
+  'xjs > object > special:nth-child(0)': 'entity.name.tag'
+  'special, xjs > object > special:nth-child(1)': 'entity.name.function'
+  'number': 'constant.numeric'
   'string': 'string.quoted'
   'true': 'constant.language'
   'false': 'constant.language'
@@ -18,11 +19,17 @@ folds: [
     type: 'comment'
   },
   {
+    type: 'object'
+  },
+  {
+    type: 'array'
+  },
+  {
     start: {type: '"["', index: 0},
     end: {type: '"]"', index: -1}
   },
   {
-    start: {type: '"{"', index: 1},
+    start: {type: '"{"', index: 0},
     end: {type: '"}"', index: -1}
   }
 ]
