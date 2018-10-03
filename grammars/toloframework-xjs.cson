@@ -1,4 +1,4 @@
-scopeName: 'toloframework-xjs'
+scopeName: 'source.toloframework-xjs'
 name: 'Toloframework XJS (permissive JSON)'
 type: 'tree-sitter'
 parser: 'tree-sitter-toloframework-xjs'
