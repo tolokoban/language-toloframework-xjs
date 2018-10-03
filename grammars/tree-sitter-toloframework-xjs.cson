@@ -1,18 +1,18 @@
-scopeName: 'source.toloframework-xjs'
 name: 'Toloframework XJS (permissive JSON)'
+scopeName: 'source.toloframework-xjs'
 type: 'tree-sitter'
 parser: 'tree-sitter-toloframework-xjs'
-fileTypes: ['.xjs', '.dep']
+fileTypes: ['xjs', 'dep']
 scopes:
   'comment': 'comment'
   'xjs > object > special:nth-child(0)': 'constructor'
   'special, xjs > object > special:nth-child(1)': 'function'
   'number': 'number'
-  'string': 'string'
-  'true': 'keyword'
-  'false': 'keyword'
-  'null': 'keyword'
-  'undefined': 'keyword'
+  'string': 'string.quoted'
+  'true': 'constant.language'
+  'false': 'constant.language'
+  'null': 'constant.language'
+  'undefined': 'constant.language'
 folds: [
   {
     type: 'comment'
