@@ -2,7 +2,7 @@ scopeName: 'source.toloframework-xjs'
 name: 'Toloframework XJS (permissive JSON)'
 type: 'tree-sitter'
 parser: 'tree-sitter-toloframework-xjs'
-fileTypes: ['xjs', 'dep']
+fileTypes: ['.xjs', '.dep']
 scopes:
   'comment': 'comment'
   'xjs > object > special:nth-child(0)': 'constructor'

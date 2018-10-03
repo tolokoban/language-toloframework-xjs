@@ -1,11 +1,10 @@
 {
   "name": "language-toloframework-xjs",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Toloframework XJS language support in Atom",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "main": "index",
   "homepage": "http://tolokoban.github.io/language-toloframework-xjs",
   "repository": {
     "type": "git",
